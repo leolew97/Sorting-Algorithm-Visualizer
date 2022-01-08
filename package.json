@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --progress --mode=production",
     "start": "webpack-dev-server --open",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/leolew97/Sorting-Algorithm-Visualizer#readme",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "nanoid": "^3.1.30",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
