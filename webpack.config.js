@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-// const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = { 
   mode: 'development',
@@ -58,6 +57,7 @@ module.exports = {
     host: 'localhost',
 
     port: 8080,
+
   },
   devtool: 'eval-source-map'
 }
