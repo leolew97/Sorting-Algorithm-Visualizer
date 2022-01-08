@@ -5,9 +5,9 @@ Hello, I built this algorithm visualizer, because I was interested in how sortin
 
 In this project directory, you can run:
 
-1.**npm run watch**: combines our React components and other JavaScript files into a browser performant file. If there are any changes, it'll re-build the file, so we don't have to refresh the page to see new edits. Run in conjunction with **npm run start**.
+1._**npm run watch*_*: combines our React components and other JavaScript files into a browser performant file. If there are any changes, it'll re-build the file, so we don't have to refresh the page to see new edits. Run in conjunction with **npm run start**.
 
-2.**npm run start**: runs the app in development mode. Open http://localhost:8080 to view it in the browser. The page reloads if there are any edits made, and we can also see any syntax errors in the console via eslint.
+2._**npm run start**_: runs the app in development mode. Open http://localhost:8080 to view it in the browser. The page reloads if there are any edits made, and we can also see any syntax errors in the console via eslint.
 
-3.**npm run build**: builds the app for production in the **build** folder. This script optimizes the build for performance. We do not need to use this script if we use **npm run watch**.
+3.**npm run build**: builds the app for production in the **build** folder. This script optimizes the build for performance. We do not need to use this script if we use _**npm run watch**_.
 
