@@ -30,7 +30,7 @@ export default class SortingVisualizer extends React.Component {
     this.resetArray();
   }
 
-  // resets the array based on the range of the slider.
+  // resets the size of the array based on the range of the slider.
   resetArray() {
     const sizeOfArray = document.getElementById('size').value;
     const NUMBER_OF_ARRAY_BARS = sizeOfArray;
