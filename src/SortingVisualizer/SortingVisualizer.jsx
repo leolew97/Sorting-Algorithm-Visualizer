@@ -66,7 +66,7 @@ export default class SortingVisualizer extends React.Component {
     // sorting speed is. This is unintuitive, because users will expect a maxed out slider to be the fastest possible speed in milliseconds.
     const inverseSpeed = document.getElementById('speed').value;
     const speedOfArray = document.getElementById('speed').getAttribute('max');
-    const ANIMATION_SPEED_MS = Math.abs((parseInt(speedOfArray) + 1)-inverseSpeed);
+    const ANIMATION_SPEED_MS = Math.abs((parseInt(speedOfArray) + 1) - inverseSpeed);
 
     for (let i = 0; i < animations.length; i++) {
       const arrayBars = document.getElementsByClassName('arrayBars');
@@ -104,10 +104,10 @@ export default class SortingVisualizer extends React.Component {
           <button onClick={() => this.resetArray()}>Generate New Array</button>  
           <span>Size<input type='range' min='50' max='200' step='10' id='size' onChange={() => this.resetArray()}></input></span>
           <span>Speed<input type='range' min='1' max='10' step='1' id='speed'></input></span>
-          <button onClick={() => this.mergeSort()}>mergeSort</button>  
-          <button onClick={() => this.quickSort()}>quickSort</button>  
-          <button onClick={() => this.heapSort()}>heapSort</button>  
-          <button onClick={() => this.bubbleSort()}>bubbleSort</button>
+          <button onClick={() => this.mergeSort()}>Merge Sort</button>  
+          <button onClick={() => this.quickSort()}>Quick Sort</button>  
+          <button onClick={() => this.heapSort()}>Heap Sort</button>  
+          <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
           </div>
         </div>
 
