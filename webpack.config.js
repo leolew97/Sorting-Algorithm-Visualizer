@@ -24,7 +24,6 @@ module.exports = {
         }
       },
       {
-        // test: /\.s[ac]ss$/i,
         test: /\.css$/,
         exclude: /(node_modules)/,
         use: [
@@ -32,17 +31,7 @@ module.exports = {
           "style-loader",
           // Translates CSS into CommonJS
           "css-loader",
-          // Compiles Sass to CSS
-          // "sass-loader",
         ]
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
       }
     ]
   },
