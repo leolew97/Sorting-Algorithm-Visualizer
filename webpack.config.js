@@ -48,7 +48,6 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, './build/index.html')
     },
-    // contentBase: path.resolve(__dirname, './build/index.html'),
 
     // Enable compression
     compress: true,
@@ -59,17 +58,6 @@ module.exports = {
     host: 'localhost',
 
     port: 8080,
-
-    // publicPath: './build',
-    // host: 'localhost',
-    // port: 8080,
-    // host: 'localhost',
-    // port: 8080,
-    // proxy: {
-    //   '/': 'http://localhost:3000'
-    // },
-    // // compress: true,
-    // hot: true
   },
   devtool: 'eval-source-map'
 }
