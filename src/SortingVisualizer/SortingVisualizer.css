@@ -1,6 +1,4 @@
 .arrayContainer {
-  /* position: absolute;
-  left: 100px; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -8,9 +6,9 @@
 
 .arrayBars {
   width: 5px;
-  /* background-color: turquoise; */
   display: inline-block;
   margin: 0px 2px;
+  height: 100%;
 }
 
 .toolbar {
@@ -21,11 +19,6 @@
 }
 
 .algorithmButtons {
-  /* margin: 0px 2px 5px; */
   display: flex;
   flex: 1;
-  /* margin: 0px 2px; */
-  content: "|";
-  margin-right: 5rem;
-  
 }
