@@ -36,7 +36,7 @@ export default class SortingVisualizer extends React.Component {
     const NUMBER_OF_ARRAY_BARS = sizeOfArray;
     const newArray = [];
     for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      newArray.push(getRandomInt(10, 1000));
+      newArray.push(getRandomInt(10, 800));
     }
     this.setState({array: newArray});
   }
@@ -102,7 +102,7 @@ export default class SortingVisualizer extends React.Component {
         <div className='toolbar'> Comparison Sorting Algorithms
           <div className='algorithmButtons'>
           <button onClick={() => this.resetArray()}>Generate New Array</button>  
-          <span>Size<input type='range' min='50' max='200' step='10' id='size' onChange={() => this.resetArray()}></input></span>
+          <span>Size<input type='range' min='10' max='200' step='10' id='size' onChange={() => this.resetArray()}></input></span>
           <span>Speed<input type='range' min='1' max='10' step='1' id='speed'></input></span>
           <button onClick={() => this.mergeSort()}>Merge Sort</button>  
           <button onClick={() => this.quickSort()}>Quick Sort</button>  

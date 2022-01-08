@@ -2,18 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  /* height: 5px; */
+  /* overflow: hidden; */
+  /* height: 75%; */
 }
 
 .arrayBars {
   width: 5px;
   display: inline-block;
   margin: 0px 2px;
-  height: 100%;
+  /* height: 5%; */
+  /* height: 5px;
+
+  overflow: hidden; */
 }
 
 .toolbar {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: #34495e;
   color: white;
 }
