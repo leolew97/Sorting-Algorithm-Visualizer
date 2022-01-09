@@ -26,14 +26,7 @@ function mergeSort(
   merge(mainArray, startIndex, middleIndex, endIndex, comparatorArray, animations);
 }
 
-function merge(
-  mainArray,
-  startIndex,
-  middleIndex,
-  endIndex,
-  comparatorArray,
-  animations
-) {
+function merge(mainArray, startIndex, middleIndex, endIndex, comparatorArray,animations) {
   // i is going to keep track of the index in the mainArray
   let i = startIndex;
 

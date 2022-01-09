@@ -22,7 +22,8 @@ export default class SortingVisualizer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      array: []
+      array: [],
+      // isDisabled: ''
     };
   }
 
@@ -39,6 +40,9 @@ export default class SortingVisualizer extends React.Component {
       newArray.push(getRandomInt(10, 800));
     }
     this.setState({array: newArray});
+
+    // Algorithm buttons and sliders appear after 'Generate Array' is clicked -- works in conjunction with the animate() method.
+    document.querySelector('.algorithmButtons').style.display = 'flex';
   }
 
   mergeSort() {
@@ -62,6 +66,9 @@ export default class SortingVisualizer extends React.Component {
   }
 
   animate(animations) {
+    // Once animation begins, we'll remove all the algorithm buttons and sliders. Then, they'll reappear after "Generate Array" is clicked.
+    document.querySelector('.algorithmButtons').style.display = 'none';
+
     // We need to take the current value of the slider, then minus it by the max bound + 1, because the further right the slider is, the slower the 
     // sorting speed is. This is unintuitive, because users will expect a maxed out slider to be the fastest possible speed in milliseconds.
     const inverseSpeed = document.getElementById('speed').value;
@@ -99,9 +106,12 @@ export default class SortingVisualizer extends React.Component {
     const inputArray = this.state.array;
     return(
       <>
-        <div className='toolbar'> Comparison Sorting Algorithms
-          <div className='algorithmButtons'>
+        <div className='toolbar'>
+          <div> Comparison Sorting Algorithms</div>
           <button onClick={() => this.resetArray()}>Generate New Array</button>  
+
+          <div className='algorithmButtons'>
+          {/* <button onClick={() => this.resetArray()}>Generate New Array</button>   */}
           <span>Size<input type='range' min='10' max='200' step='10' id='size' onChange={() => this.resetArray()}></input></span>
           <span>Speed<input type='range' min='1' max='10' step='1' id='speed'></input></span>
           <button onClick={() => this.mergeSort()}>Merge Sort</button>  
